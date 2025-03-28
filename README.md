@@ -1,1 +1,1 @@
-# Atvainojos, ka man video, iemesls - sociālā trauksme, selektīvais mutisms
+Atvainojos, ka man video, iemesls - sociālā trauksme, selektīvais mutisms
