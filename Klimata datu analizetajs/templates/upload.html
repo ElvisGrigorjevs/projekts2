@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Augšupielādēt CSV failu</h2>
+<form method="POST" enctype="multipart/form-data">
+    <br>
+    <input type="file" name="file" class="form-control border border-dark border-3">
+    <br>
+    <button type="submit" class="btn btn-success">Augšupielādēt</button>
+</form>
+{% endblock %}

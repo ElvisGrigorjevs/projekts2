@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Datu tabula: {{ dataset.filename }}</h2>
+<hr>
+<div class="border border-dark border-3">{{ table | safe }}</div>
+<a href="{{ url_for('visualize', id=dataset.id) }}" class="btn btn-primary mt-3">Analizēt datus</a>
+{% endblock %}

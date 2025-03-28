@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>↓Faila augšupielāde</h2>
+<a href="{{ url_for('upload') }}" class="btn btn-primary">Augšupielādēt CSV</a>
+<hr>
+<h3 class="mt-4">Augšupielādētie dati:</h3>
+<ul>
+    {% for data in datasets %}
+        <li>
+            {{ data.filename }} -
+            <a href="{{ url_for('data', id=data.id) }}">Skatīt datus</a> |
+            <a href="{{ url_for('visualize', id=data.id) }}">Analītika</a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
